@@ -37,6 +37,12 @@
     ¡Ahora abre tu navegador y dirígete a 
     http://localhost:8080! 
     ```
+2. **Para iniciar session:**
+
+    ```bash
+    usuario: leonard
+    password: 9386492
+    ```
     
 ## 📷 Imagenes de aplicación
 
