@@ -11,8 +11,7 @@ session_start();
                     <h1 class="mb-3 text-light fw-bold">Crud Mini-Blog</h1>
                     <h1 class="mb-5 display-1 text-white fw-lighter">Administrador del Mini-Blog</h1>
                     <div class="d-flex gap-3">
-                        <a href="" class="btn btn-light  btn-main">Codigo</a>
-                        <a href="" class="btn btn-light  btn-main">Documentacion</a>
+                        <a href="https://github.com/isDanydev/mini-blog" class="btn btn-light  btn-main" target="_blank">Ir al codigo</a>
                     </div>
                 </div>
             </div>
