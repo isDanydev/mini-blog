@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #32363b;
+
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    min-height: 100vh;
+    max-width: 1280px;
+}
+
+/* Home */
+
+.hero-header {
+    position: relative;
+    /* Necesario para que el pseudo-elemento se posicione correctamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header::before {
+    content: "";
+    /* Necesario para el pseudo-elemento */
+    position: absolute;
+    /* Posiciona el pseudo-elemento en relación al contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/back-main.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    z-index: -2;
+    /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+/* Blog */
+
+.btn-main {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-main:hover {
+    background-color: #434343;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-main:focus {
+    border: 2px solid #fff;
+}
+
+.grid__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.effect__card {
+    transition: all 0.3s ease-in-out;
+}
+
+.effect__card:hover {
+    transform: scale(1.03);
+}
+
+.blog {
+    width: 100%;
+}
+
+
+.grid__table_th {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr;
+    text-align: center;
+}
+
+.grid__table_tr {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr;
+    grid-template-rows: 80px;
+}
+
+
+.grid__table_tr td,
+.grid__table_tr tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__table_tr .content__table {
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    justify-content: center;
+}
+
+
+.grid__table_tr_users {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    text-align: center;
+}
+
+.grid__table_th_users {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.grid__table_tr_users td,
+.grid__table_tr_users tr {
+    display: flex;
+    align-items: center;
+}
+
+.grid__table_tr_comments {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr;
+    grid-template-rows: 80px;
+    text-align: center;
+}
+
+.grid__table_th_comments {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr;
+    text-align: center;
+}
+
+.grid__table_tr_comments td,
+.grid__table_tr_comments tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+td.content__table {
+    display: flex;
+    align-items: start;
+}
