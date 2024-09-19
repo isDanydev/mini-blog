@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="http://localhost/mini-blog/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/mini-blog/css/global.css">
     <title><?= $title; ?></title>
+    <link rel="icon" href="http://localhost/mini-blog/img/icon.png" type="image/x-icon">
 </head>
 
 <body class="container-fluid">
